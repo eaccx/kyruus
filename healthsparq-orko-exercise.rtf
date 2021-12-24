@@ -1,0 +1,46 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \qc \f0 \sa180 \li0 \fi0 \b \fs36 Team Orko Take-Home Exercise\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Introduction\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Thanks for applying to Kyruus!\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This take-home exercise should give us a sense of your approach to technical problem-solving. More important than the code you come up with is the discussion you have with us afterwards. Expect to talk about why you wrote it the way you did and how you would improve it given more time or additional requirements.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Write the code in a way that helps us understand your thinking.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Submit your code by checking it into a GitHub account and sending a link to the repository.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Use git commit messages that help us understand your thinking.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Reach out if you have any questions.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Requirements\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Write an application that:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Accepts input in {\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Comma-separated_values"}}{\fldrslt{\ul
+comma-separated values (\u8220"CSV\u8221") format
+}}}
+, plus an additional parameter to specify one of the CSV column headers.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Does not use a library, framework, prebuilt module, etc. to parse the CSV. No need to cover all edge cases, just pick a few you consider important. We want to know which edge cases you care most about and why.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Sorts the data based on the given column, in descending string order.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Outputs the sorted CSV.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Bonus: Is runnable with a {\field{\*\fldinst{HYPERLINK "https://docs.docker.com/get-started/"}}{\fldrslt{\ul
+Docker
+}}}
+ command (i.e.\u160?includes a {\field{\*\fldinst{HYPERLINK "https://docker-curriculum.com/#dockerfile"}}{\fldrslt{\ul
+Dockerfile
+}}}
+).\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 6.\tx360\tab Bonus: Has {\field{\*\fldinst{HYPERLINK "https://cucumber.io/docs/gherkin/reference/"}}{\fldrslt{\ul
+Gherkin examples
+}}}
+. (No need to have step definitions that make the examples into executable tests.)\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Example\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Input\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 City,State,Motto,Mayor\line
+Portland,Oregon,The City That Works,Ted Wheeler\line
+Boston,Massachusetts,It\u8217's All Here,Michelle Wu\line
+New Orleans,Louisiana,City of Yes,LaToya Cantrell\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Column Header: {\f1 City}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Output\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 City,State,Motto,Mayor\line
+Portland,Oregon,The City That Works,Ted Wheeler\line
+New Orleans,Louisiana,City of Yes,LaToya Cantrell\line
+Boston,Massachusetts,It\u8217's All Here,Michelle Wu\par}
+}
