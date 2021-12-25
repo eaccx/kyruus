@@ -5,7 +5,12 @@ Esteban Capillo, Dec 2021
 The problem statement can be found in the root directory
 
 ## Instructions to build and run the example application
-The following instructions apply to Linux (Fedora)
+The following instructions apply to Linux (Fedora). 
+It is assumed that the environment have the following tools already installed:
+* maven
+* docker
+* java 8+
+* a working internet connection for Docker and Maven to work
 
 ### As a maven application
 
