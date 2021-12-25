@@ -1,7 +1,7 @@
 Feature: Csv Sort
 
     Scenario Outline: CLI command execution e2e (happy path)
-        Given user passes csv path <csv-path> and column <column-name>
+        Given user passes the content of file <csv-path> and column name <column-name>
         When user executes the command
         Then the output csv last row must be <last-row>
 

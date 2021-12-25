@@ -16,19 +16,16 @@ It is assumed that the environment have the following tools already installed:
 
 1. Move to project's root directory
 2. Build the command jar with ```mvn clean package```
-3. Execute with ```java -jar target/<path-to-jar> <csv-path> <column-name>```
+3. Execute command with ```java -jar target/<path-to-jar> <column-name> < <path-to-csv>```
 
 There are a few csv samples in **src/java/resources** folder in the project
 
 ### As a docker application
 
 1. Move to project's root directory
-2. Build the image with ```sudo docker build -t esteban/kyruus .```
-3. Execute with ```docker run -v $(pwd)/src/main/resources:/usr/resources esteban/kyruus /usr/resources/sample1.csv City``` for example
-
-In this case I choose to map host's sample resources as a volume in the container, but another possibility would have been to 
-pass the csv as input stream to ```docker run``` and modify the application to work with the system stream
-instead of a file path.
+2. Build the jar with ```mvn clean package```
+3. Build the image with ```sudo docker build -t esteban/kyruus .```
+4. Execute command with ```docker run -i esteban/kyruus City < src/main/resources/sample1.csv``` for example
 
 ## Running tests
 
