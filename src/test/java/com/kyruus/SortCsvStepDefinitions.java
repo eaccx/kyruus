@@ -8,6 +8,7 @@ import io.cucumber.java.en.When;
 
 import java.util.List;
 
+import static com.kyruus.Constants.CSV_SEPARATOR;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SortCsvStepDefinitions {
@@ -29,7 +30,7 @@ public class SortCsvStepDefinitions {
     @Then("^the output csv last row must be (.*)$")
     public void output_csv_last_row(String lastRow) {
         final List<List<String>> dataRows = this.outCsv.getDataRows();
-        final String lastRowAsString = String.join(",", dataRows.get(dataRows.size() - 1));
+        final String lastRowAsString = String.join(CSV_SEPARATOR, dataRows.get(dataRows.size() - 1));
 
         assertEquals(lastRowAsString, lastRow); // last row as string
     }

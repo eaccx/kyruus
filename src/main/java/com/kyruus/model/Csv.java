@@ -2,6 +2,9 @@ package com.kyruus.model;
 
 import java.util.List;
 
+/**
+ * Representation of a CSV that is suitable for data-row sorting
+ */
 public class Csv {
 
     private List<List<String>> dataRows;
